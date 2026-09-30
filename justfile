@@ -17,3 +17,6 @@ commit msg:
 # Affiche l'historique des commits
 log:
     git log --oneline --graph --all
+
+clean:
+    rm -f tmp.txt

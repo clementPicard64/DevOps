@@ -1,0 +1,15 @@
+
+init:
+    git init
+
+status:
+    git status
+
+add:
+    git add .
+
+commit msg:
+    git commit -m "{{msg}}"
+
+log:
+    git log --oneline --graph --all

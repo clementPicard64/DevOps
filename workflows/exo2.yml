@@ -1,0 +1,28 @@
+name: Exercice 2 - Informations utilisateur
+
+on: [push]
+
+jobs:
+  job-nom:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher le nom
+        env:
+          NOM: ${{ vars.USER_NOM }}
+        run: echo "Nom : $NOM"
+
+  job-prenom:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher le prénom
+        env:
+          PRENOM: ${{ vars.USER_PRENOM }}
+        run: echo "Prénom : $PRENOM"
+
+  job-email:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Afficher l'email
+        env:
+          EMAIL: ${{ vars.USER_EMAIL }}
+        run: echo "Email : $EMAIL"
